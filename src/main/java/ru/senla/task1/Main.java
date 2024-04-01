@@ -14,7 +14,7 @@ public class Main {
             System.out.println(thread.getState());
             System.out.println(thread2.getState());
             Object a = SlowThread.getA();
-            synchronized (a){
+            synchronized (a) {
                 a.notify();
             }
 
@@ -22,9 +22,8 @@ public class Main {
             sleep(2000);
             System.out.println(thread2.getState());
 
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
 }

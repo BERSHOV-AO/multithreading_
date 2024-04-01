@@ -23,7 +23,7 @@ public class TimeInterval implements Runnable {
     }
 
     public static void main(String[] args) {
-        TimeInterval timeInterval = new TimeInterval(7);
+        TimeInterval timeInterval = new TimeInterval(1);
         Thread timeThread = new Thread(timeInterval);
         timeThread.start();
     }

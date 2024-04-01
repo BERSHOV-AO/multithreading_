@@ -1,11 +1,12 @@
 package ru.senla.task1;
 
-public class SlowThread implements Runnable{
+public class SlowThread implements Runnable {
     public static Object getA() {
         return a;
     }
 
     private static Object a = new Object();
+
     @Override
     public void run() {
         try {

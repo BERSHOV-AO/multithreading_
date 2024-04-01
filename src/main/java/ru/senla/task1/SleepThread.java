@@ -1,6 +1,6 @@
 package ru.senla.task1;
 
-public class SleepThread implements Runnable{
+public class SleepThread implements Runnable {
     @Override
     public void run() {
         System.out.println(Thread.currentThread().getState());
